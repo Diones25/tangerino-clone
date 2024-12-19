@@ -7,5 +7,19 @@ export class AppController {
 
   @Get()
   @Render('index')
-  home() {}
+  home() {
+    const users = [
+      {
+        name: 'Diones',
+        address: 'Rua Francisca Carla',
+        age: 34
+      },
+      {
+        name: 'Maria',
+        address: 'Avenida Brasil',
+        age: 28
+      }
+    ];
+    return { users };
+  }
 }

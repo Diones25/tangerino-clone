@@ -7,5 +7,10 @@
 </head>
 <body>
   <h1>Tangerino clone</h1>
+    <% users.forEach(user => { %>
+      <p><%= user.name %></p>
+      <p><%= user.adress %></p>
+      <p><%= user.age %></p>
+    <% }) %>
 </body>
 </html>
