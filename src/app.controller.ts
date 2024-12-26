@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  @Render('index')
+  @Render('pages/home')
   home() {
     const users = [
       {
@@ -22,4 +22,8 @@ export class AppController {
     ];
     return { users };
   }
+
+  @Get('relatorios')
+  @Render('pages/relatorios')
+  teste() {}
 }
